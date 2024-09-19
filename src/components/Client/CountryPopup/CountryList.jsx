@@ -49,13 +49,14 @@ const CountryList = () => {
                 }
               }}
             >
-              <div className='country__flag w-8 h-8'>
+              <div className='country__flag'>
                 <img
                   src={
                     import.meta.env.VITE_API_BASE_URI +
                     '/uploads/' +
                     value.picture
                   }
+                  className="w-8 h-8"
                   alt=''
                 />
               </div>
