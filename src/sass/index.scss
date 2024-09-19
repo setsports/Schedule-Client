@@ -42,6 +42,10 @@ svg {
   justify-content: flex-start;
 }
 
+img {
+  max-width: unset;
+}
+
 main,
 .container {
   max-width: 100%;
