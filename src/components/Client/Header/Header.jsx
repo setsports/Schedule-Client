@@ -65,7 +65,7 @@ const Header = () => {
       <nav className='navbar flex justify-between items-center'>
         <div className='nav__left flex gap-8 items-center'>
           <div className='nav__logo'>
-            <Logo src='../src/assets/images/nav-logo.svg' alt='' />
+            <Logo src='https://go.setantasports.com/wp-content/uploads/2023/10/site-logo-home-1.svg' alt='' />
           </div>
           <div className='nav__menu'>
             <ul className='flex gap-10'>
