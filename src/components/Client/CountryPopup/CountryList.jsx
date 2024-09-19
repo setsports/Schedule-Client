@@ -31,7 +31,7 @@ const CountryList = () => {
           return (
             <Country
               key={key}
-              className={`country__list---country border rounded flex items-center p-2 gap-4 regular text-sm lg:p-3 lg:text-base lg:pr-10 cursor-pointer ${
+              className={`country__list---country border rounded flex items-center p-2 gap-2 regular text-sm lg:p-3 lg:text-base lg:pr-10 cursor-pointer ${
                 selectedCountry === value.name &&
                 'bg-[rgba(255,243,192,1)] border-[rgba(255,243,192,1)]'
               }`}
