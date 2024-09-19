@@ -25,7 +25,7 @@ const CountryList = () => {
       <div
         className={`country-list p-3 lg:p-5 grid ${
           countries.length !== 1 ? 'grid-cols-2' : 'grid-cols-1'
-        } gap-5`}
+        } gap-3 sm:gap-5`}
       >
         {Object.entries(countries).map(([key, value]) => {
           return (
@@ -56,7 +56,7 @@ const CountryList = () => {
                     '/uploads/' +
                     value.picture
                   }
-                  className="w-8 h-8"
+                  className="w-6 h-6 sm:w-8 sm:h-8"
                   alt=''
                 />
               </div>
