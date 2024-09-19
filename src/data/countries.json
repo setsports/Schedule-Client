@@ -1,0 +1,44 @@
+{
+  "EN": [
+    {
+      "country": "Georgia",
+      "flag": "../src/assets/images/flags/GE.svg"
+    },
+    {
+      "country": "Azerbaijan",
+      "flag": "../src/assets/images/flags/AZ.svg"
+    },
+    {
+      "country": "Estonia",
+      "flag": "../src/assets/images/flags/EE.svg"
+    },
+    {
+      "country": "Kazakhstan",
+      "flag": "../src/assets/images/flags/KZ.svg"
+    },
+    {
+      "country": "Kyrgyzstan",
+      "flag": "../src/assets/images/flags/KG.svg"
+    },
+    {
+      "country": "Latvia",
+      "flag": "../src/assets/images/flags/LV.svg"
+    },
+    {
+      "country": "Lithuania",
+      "flag": "../src/assets/images/flags/LT.svg"
+    },
+    {
+      "country": "Moldova",
+      "flag": "../src/assets/images/flags/MD.svg"
+    },
+    {
+      "country": "Ukraine",
+      "flag": "../src/assets/images/flags/UA.svg"
+    },
+    {
+      "country": "Uzbekistan",
+      "flag": "../src/assets/images/flags/UZ.svg"
+    }
+  ]
+}

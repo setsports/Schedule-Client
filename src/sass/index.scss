@@ -1,0 +1,190 @@
+@import './variables';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Setantica Thin';
+  font-weight: 100;
+  src: url('../assets/fonts/Setantica2023-ThinReg.otf');
+}
+
+@font-face {
+  font-family: 'Setantica Regular';
+  font-weight: 400;
+  src: url('../assets/fonts/Setantica2023-RegularReg.otf');
+}
+
+@font-face {
+  font-family: 'Setantica Regular';
+  font-weight: 900;
+  src: url('../assets/fonts/Setantica2023-BlackReg.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $backgroundColor;
+}
+
+svg {
+  display: flex;
+  text-align: left;
+  float: left;
+  justify-content: flex-start;
+}
+
+main,
+.container {
+  max-width: 100%;
+}
+
+.wrapper,
+.mobile-nav__ul,
+nav {
+  max-width: 1366px;
+  margin: auto;
+}
+
+.mobile-header {
+  display: none;
+}
+
+.yellow {
+  color: $primaryColor;
+}
+
+.thin {
+  font-family: 'Setantica Regular', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.regular {
+  font-family: 'Setantica Regular', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.black {
+  font-family: 'Setantica Regular', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+.inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.nsg {
+  font-family: 'Noto Sans Georgian', sans-serif;
+}
+
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 5px dashed black;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 0.5s infinite linear;
+}
+
+.splide__arrow--prev {
+  background-color: white;
+  opacity: 1 !important;
+  left: calc(-40px + 2.5em);
+  height: 100%;
+  pointer-events: all;
+}
+.splide__arrow--next {
+  background-color: white;
+  opacity: 1 !important;
+  right: calc(-40px + 2.5em);
+  height: 100%;
+}
+
+.splide__track {
+  max-width: calc(100% - 40px - 5em);
+  margin: auto;
+}
+
+.splide__arrow svg {
+  width: 22px;
+  height: 22px;
+  fill: black;
+}
+
+.splide__arrow:hover:not(:disabled) svg {
+  fill: black;
+}
+
+.splide__arrow:disabled {
+  opacity: 0.5 !important;
+}
+
+// !Animations
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+// !Responsive
+@media (max-width: 1366px) {
+  .wrapper,
+  .mobile-nav__ul,
+  nav:not(.panel__menu) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.panel::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .splide__arrow {
+    display: flex;
+  }
+
+  .splide__track {
+    max-width: calc(100% - 40px - 5em);
+    margin: auto;
+  }
+}
+
+@media (max-width: 1080px) {
+  .header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .splide__track {
+    max-width: calc(100% - 40px - 5em);
+    margin: auto;
+  }
+}
