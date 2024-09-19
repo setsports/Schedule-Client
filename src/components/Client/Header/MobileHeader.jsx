@@ -50,7 +50,7 @@ const MobileHeader = () => {
         <div className='mobile-nav__wrapper w-full pt-5 pb-5 flex justify-between items-center'>
           <div className='mobile-nav__left'>
             <div className='nav__logo'>
-              <Logo src='../src/assets/images/nav-logo.svg' alt='' />
+              <Logo src='https://go.setantasports.com/wp-content/uploads/2023/10/site-logo-home-1.svg' alt='' />
             </div>
           </div>
           <div className='mobile-nav__right flex items-center gap-2'>
