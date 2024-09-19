@@ -32,7 +32,7 @@ const ColumnHeader = ({ data }) => {
         <Sport className='sports-table__column-header---sport-name regular p-3 md:pl-8 md:pr-8'>
           {translations[language][data.sport]}
         </Sport>
-        <League className='sports-table__column-header---sport-league regular p-3 md:pl-3 md:pr-8'>
+        <League className='sports-table__column-header---sport-league regular p-3 md:pl-3 md:pr-8 hidden sm:block'>
           {data.league}
         </League>
       </div>
