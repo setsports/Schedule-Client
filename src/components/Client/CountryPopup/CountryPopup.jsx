@@ -17,7 +17,7 @@ const Popup = styled.div`
 
   @media (max-width: 1080px) {
     & {
-      width: 80%;
+      width: 90%;
     }
   }
 `;
