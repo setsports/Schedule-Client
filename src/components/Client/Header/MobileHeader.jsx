@@ -62,8 +62,9 @@ const MobileHeader = () => {
                 <FiMenu
                   className=' text-2xl'
                   onClick={(e) => {
-                    setIsOpened(!isOpened);
-                    document.body.style.overflow = 'hidden';
+                      setIsOpened(!isOpened);
+                      document.body.style.overflow = 'hidden';
+                    }
                   }
                 />
               )}
