@@ -49,14 +49,6 @@ const ColumnHeader = ({ data }) => {
             />
           ))}
         </div>
-      ) : selectedPlatform === 'APP' ? (
-        <Button
-          target='_blank'
-          href={`https://app.setantasports.com/live/${data.eventId}`}
-          className='rounded text-white regular text-sm sm:text-base sm:hidden py-1 px-3 mr-3'
-        >
-          {translations[language]['Watch']}
-        </Button>
       ) : (
         ''
       )}
