@@ -37,7 +37,7 @@ const ColumnContent = ({ data }) => {
           className={`sports-table__column-content---sport-watch ${
             localStorage.getItem('selectedPlatform') !== 'APP'
               ? 'hidden sm:flex'
-              : 'hidden sm:flex'
+              : ''
           }`}
         >
           {localStorage.getItem('selectedPlatform') === 'APP' && (
