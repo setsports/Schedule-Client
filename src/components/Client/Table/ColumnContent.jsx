@@ -19,7 +19,7 @@ const ColumnContent = ({ data }) => {
   return (
     <div className='sports-table__column-content bg-[rgba(30,30,30,1)]'>
       <div
-        className={`sports-table__column-content---sport-details flex items-center justify-between p-3 md:pl-8 md:pr-8 flex-row-reverse sm:flex-row`}
+        className={`sports-table__column-content---sport-details flex items-center justify-between p-3 md:pl-8 md:pr-8 ${localStorage.getItem('selectedPlatform') !== 'APP' && 'flex-row-reverse sm:flex-row'}`}
       >
         <div className='sports-table__column-content---sport-time table-time text-white  sm:text-3xl text-base'>
           {data.time}
