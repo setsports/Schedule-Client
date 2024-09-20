@@ -43,9 +43,7 @@ const ColumnHeader = ({ data }) => {
               src={`${import.meta.env.VITE_API_BASE_URI}/uploads/${
                 channel.picture
               }`}
-              style={{
-                height: '30px',
-              }}
+              className="h-[25px] sm:h-[30px]"
             />
           ))}
         </div>
