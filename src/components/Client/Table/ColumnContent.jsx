@@ -41,13 +41,13 @@ const ColumnContent = ({ data }) => {
           }`}
         >
           {localStorage.getItem('selectedPlatform') === 'APP' && (
-            <Button
-              target='_blank'
-              href={`https://app.setantasports.com/live/${data.eventId}`}
-              className='rounded text-white regular py-2 px-3 sm:px-8 sm:py-[10px] text-sm sm:text-base'
-            >
-              {translations[language]['Watch']}
-            </Button>
+             <Button
+          target='_blank'
+          href={`https://app.setantasports.com/live/${data.eventId}`}
+          className='rounded text-white regular text-sm sm:text-base sm:hidden py-1 px-3 mr-3'
+        >
+          {translations[language]['Watch']}
+        </Button>
           )}
         </div>
       </div>
