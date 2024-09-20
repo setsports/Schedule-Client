@@ -28,7 +28,7 @@ const ColumnHeader = ({ data }) => {
 
   return (
     <div className='sports-table__column-header bg-[rgba(30,30,30,1)] flex justify-between items-center w-auto'>
-      <div className='sports-table__column-header---sport-details flex text-xs sm:text-base'>
+      <div className='sports-table__column-header---sport-details flex text-[12px] sm:text-base'>
         <Sport className='sports-table__column-header---sport-name regular p-3 md:pl-8 md:pr-8'>
           {translations[language][data.sport]}
         </Sport>
