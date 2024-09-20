@@ -61,13 +61,20 @@ const MobileHeader = () => {
               {!isOpened && (
                 <FiMenu
                   className=' text-2xl'
-                  onClick={(e) => setIsOpened(!isOpened)}
+                  onClick={(e) => {
+                    setIsOpened(!isOpened);
+                    document.body.style.overflow = 'hidden';
+                  }
                 />
               )}
               {isOpened && (
                 <IoClose
                   className='text-2xl'
-                  onClick={(e) => setIsOpened(false)}
+                  onClick={(e) => {
+                      setIsOpened(false);
+                      document.body.style.overflow = 'auto';
+                    }
+                  }
                 />
               )}
             </MobileButton>
