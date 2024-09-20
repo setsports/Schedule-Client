@@ -55,7 +55,7 @@ const CountryPopup = ({ setIsPopupOpened }) => {
             className='text-3xl cursor-pointer'
             onClick={() => {
               localStorage.getItem('selectedPlatform') === 'APP' &&
-              !localStorage.getItem('country')
+              !localStorage.getItem('appCountry')
                 ? (localStorage.removeItem('selectedPlatform'),
                   window.location.reload())
                 : (setIsPopupOpened(false),
