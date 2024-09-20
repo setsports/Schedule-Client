@@ -84,7 +84,7 @@ const MobileHeader = () => {
 
         {isOpened && (
           <>
-            <ul className='mobile-nav__ul flex flex-col gap-6 bg-black border-t-2 w-full absolute left-1/2 -translate-x-1/2 pt-6 pb-6 h-screen z-50 overflow-auto'>
+            <ul className='mobile-nav__ul flex flex-col gap-6 bg-black border-t-2 w-full absolute left-1/2 -translate-x-1/2 pt-6 pb-6 min-h-screen z-50 overflow-auto'>
               <li>
                 <MenuItem href='/' className='regular'>
                   {translations[language]['Home']}
