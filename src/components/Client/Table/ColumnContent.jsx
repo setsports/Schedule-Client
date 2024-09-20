@@ -26,7 +26,7 @@ const ColumnContent = ({ data }) => {
         </div>
         <div className='sports-table__column-content---sport-teams flex gap-3 text-white text-sm sm:text-base'>
           <div
-            className={`sports-table__column-content---sport-match ${localStorage.getItem('selectedPlatform') === 'APP' && 'mx-2'} ${
+            className={`sports-table__column-content---sport-match ${localStorage.getItem('selectedPlatform') === 'APP' && 'mx-2 text-center sm:mx-0'} ${
               language === 'KA' ? 'nsg' : 'inter'
             }`}
           >
