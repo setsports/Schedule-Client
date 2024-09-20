@@ -26,7 +26,7 @@ const ColumnContent = ({ data }) => {
         </div>
         <div className='sports-table__column-content---sport-teams flex gap-3 text-white text-sm sm:text-base'>
           <div
-            className={`sports-table__column-content---sport-match ${
+            className={`sports-table__column-content---sport-match ${localStorage.getItem('selectedPlatform') === 'APP' && 'mx-2'} ${
               language === 'KA' ? 'nsg' : 'inter'
             }`}
           >
@@ -44,7 +44,7 @@ const ColumnContent = ({ data }) => {
              <Button
           target='_blank'
           href={`https://app.setantasports.com/live/${data.eventId}`}
-          className='rounded text-white regular text-sm sm:text-base py-1 px-3 sm:py-3 px-8'
+          className='rounded text-white regular text-sm sm:text-base py-1 px-3 sm:py-3 sm:px-8'
         >
           {translations[language]['Watch']}
         </Button>
