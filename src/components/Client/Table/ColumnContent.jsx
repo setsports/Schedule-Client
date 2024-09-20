@@ -44,7 +44,7 @@ const ColumnContent = ({ data }) => {
              <Button
           target='_blank'
           href={`https://app.setantasports.com/live/${data.eventId}`}
-          className='rounded text-white regular text-sm sm:text-base py-1 px-3 sm:py-3 px-4'
+          className='rounded text-white regular text-sm sm:text-base py-1 px-3 sm:py-3 px-8'
         >
           {translations[language]['Watch']}
         </Button>
