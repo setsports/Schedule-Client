@@ -211,10 +211,10 @@ const CountrySelector = () => {
       {isPopupOpened ? (
         <CountryPopup setIsPopupOpened={setIsPopupOpened} />
       ) : localStorage.getItem('selectedPlatform') === 'APP' &&
-        !localStorage.getItem('appCountry') ? (
-          {document.style.overflow = 'hidden';}
-        <CountryPopup setIsPopupOpened={setIsPopupOpened} />
-      ) : (
+        !localStorage.getItem('appCountry') ? {
+          document.style.overflow = 'hidden';
+          return <CountryPopup setIsPopupOpened={setIsPopupOpened} />;
+      } : (
         ''
       )}
     </>
