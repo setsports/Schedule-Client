@@ -212,7 +212,7 @@ const CountrySelector = () => {
         <CountryPopup setIsPopupOpened={setIsPopupOpened} />
       ) : localStorage.getItem('selectedPlatform') === 'APP' &&
         !localStorage.getItem('appCountry') ? (
-          <CountryPopup setIsPopupOpened={setIsPopupOpened} />;
+          <CountryPopup setIsPopupOpened={setIsPopupOpened} />
       ) : (
         ''
       )}
